@@ -1,0 +1,22 @@
+# 基础依赖
+flask==2.3.3
+gunicorn==21.2.0
+python-dotenv==1.0.0
+
+# Google Calendar API相关
+google-api-python-client==2.108.0
+google-auth==2.23.0
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+
+# LLM模型相关
+transformers==4.35.2
+torch==2.1.0
+sentencepiece==0.1.99
+accelerate==0.23.0
+
+# 工具类库
+requests==2.31.0
+pyyaml==6.0.1
+python-dateutil==2.8.2
+pytz==2023.3

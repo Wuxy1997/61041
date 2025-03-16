@@ -1,0 +1,17 @@
+version: '3'
+services:
+  ai-calendar-assistant:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - credentials:/app/credentials
+      - models:/app/models
+    environment:
+      - MODEL_PATH=/app/models
+      - CLIENT_SECRET_FILE=/app/credentials/client_secret.json
+    restart: unless-stopped
+
+volumes:
+  credentials:
+  models:
